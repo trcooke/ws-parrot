@@ -1,6 +1,26 @@
 # ws-parrot
 A testing tool. A standalone web server that you can teach to respond in a particular manner for a given request path.
 
+## Getting from clojars
+
+[![Clojars Project](https://img.shields.io/clojars/v/ws-parrot.svg)](https://clojars.org/ws-parrot)
+
+Leiningen
+
+    [ws-parrot "0.1.0"]
+
+Gradle
+
+    compile "ws-parrot:ws-parrot:0.1.0"
+
+Maven
+
+    <dependency>
+        <groupId>ws-parrot</groupId>
+        <artifactId>ws-parrot</artifactId>
+        <version>0.1.0</version>
+    </dependency>
+
 ## Starting and stopping the web server
 From your code, start the server with
 
