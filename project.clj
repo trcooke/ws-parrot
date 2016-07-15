@@ -1,6 +1,7 @@
 (defproject ws-parrot "0.1.0"
   :main ws-parrot.handler
   :description "A testing tool for stubbing out HTTP web services"
+  :license "The MIT License (MIT)"
   :url "https://github.com/trcooke/ws-parrot"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
