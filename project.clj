@@ -1,7 +1,7 @@
-(defproject ws-parrot "0.1.0-SNAPSHOT"
+(defproject ws-parrot "0.1.0"
   :main ws-parrot.handler
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "A testing tool for stubbing out HTTP web services"
+  :url "https://github.com/trcooke/ws-parrot"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [compojure "1.5.1"]
