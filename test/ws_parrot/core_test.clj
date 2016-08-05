@@ -1,7 +1,7 @@
-(ns ws-parrot.handler-test
+(ns ws-parrot.core-test
   (:require [clojure.test :refer :all]
             [ring.mock.request :as mock]
-            [ws-parrot.handler :refer :all]
+            [ws-parrot.core :refer :all]
             [clj-http.client :as client]))
 
 (deftest test-app
