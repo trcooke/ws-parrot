@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+    <meta charset="utf-8"/>
+    <title>WS Parrot!</title>
+</head>
+<body>
+    <script
+			  src="https://code.jquery.com/jquery-3.1.0.min.js"
+			  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+			  crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+    <script>
+    $( document ).ready(function() {
+        $('#parrotknows').dataTable( {
+            ajax: {
+                url: '/parrotthis',
+                dataSrc: ''
+            },
+            columns: [
+                { "data": 'uri' },
+                { "data": 'method' },
+                { "data": 'response' }
+            ]
+        });
+    });
+    </script>
+    <h1>Teach the parrot a new thing</h1>
+    <form>
+
+    </form>
+    <h1>What the Parrot already knows</h1>
+    <div>
+        <table id="parrotknows">
+            <thead>
+            <tr>
+                <th>URI</th>
+                <th>Method</th>
+                <th>Response</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>URI</th>
+                <th>Method</th>
+                <th>Response</th>
+            </tr>
+        </tfoot>
+        </table>
+    </div>
+</body>
+</html>
